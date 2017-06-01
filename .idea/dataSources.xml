@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails Rangeland: development" uuid="4aecb889-a1ef-4ecc-ae80-efa5806938ad">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Rangeland_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Rangeland: production" uuid="80ef0a56-9ea6-45cb-82bb-782567afac5e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Rangeland_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Rangeland: test" uuid="e6e2d5af-6cf8-42eb-b6a3-5324f3a3b1f6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:Rangeland_test</jdbc-url>
+    </data-source>
+  </component>
+</project>

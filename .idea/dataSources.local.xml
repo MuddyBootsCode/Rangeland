@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Rangeland: development" uuid="4aecb889-a1ef-4ecc-ae80-efa5806938ad">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails Rangeland: production" uuid="80ef0a56-9ea6-45cb-82bb-782567afac5e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>Rangeland</user-name>
+    </data-source>
+    <data-source name="Rails Rangeland: test" uuid="e6e2d5af-6cf8-42eb-b6a3-5324f3a3b1f6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+  </component>
+</project>
