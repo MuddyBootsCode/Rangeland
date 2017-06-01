@@ -1,1 +1,23 @@
-<h1>Welcome to my Rangeland App </h1>
+<% @genevarecords.each do |record| %>
+    <div>
+      <h1><%= record.GV_01_open_gauge %></h1><br />
+      <h1><%= record.GV_02_open_gauge %></h1><br />
+      <h1><%= record.GV_03_open_gauge %></h1><br />
+      <h1><%= record.GV_01_close_gauge %></h1><br />
+      <h1><%= record.GV_02_close_gauge %></h1><br />
+      <h1><%= record.GV_03_close_gauge %></h1><br />
+      <h1><%= record.GV_01_open_stock %></h1><br />
+      <h1><%= record.GV_02_open_stock %></h1><br />
+      <h1><%= record.GV_03_open_stock %></h1><br />
+      <h1><%= record.GV_01_close_stock %></h1><br />
+      <h1><%= record.GV_02_close_stock %></h1><br />
+      <h1><%= record.GV_03_close_stock %></h1><br />
+      <h1><%= record.GV_01_stock_change %></h1><br />
+      <h1><%= record.GV_02_stock_change %></h1><br />
+      <h1><%= record.GV_03_stock_change %></h1><br />
+
+
+    </div>
+
+    <hr />
+<% end %>

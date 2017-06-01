@@ -28,8 +28,11 @@ ActiveRecord::Schema.define(version: 20170601150515) do
     t.float    "GV_01_close_stock"
     t.float    "GV_02_close_stock"
     t.float    "GV_03_close_stock"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.float    "GV_01_stock_change"
+    t.float    "GV_02_stock_change"
+    t.float    "GV_03_stock_change"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
 end
