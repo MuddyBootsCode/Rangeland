@@ -4,7 +4,6 @@
     <list default="true" id="63491e64-e55f-47a3-a76b-ba13a4b915e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/geneva_records/index.html.erb" afterPath="$PROJECT_DIR$/app/views/geneva_records/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/geneva_records/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+            <state relative-caret-position="105">
+              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -509,12 +508,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496327387291</updated>
-      <workItem from="1496327388863" duration="6151000" />
+      <workItem from="1496327388863" duration="6675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6151000" />
+    <option name="totallyTimeSpent" value="6675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -625,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/geneva_records/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+        <state relative-caret-position="105">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
