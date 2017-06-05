@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63491e64-e55f-47a3-a76b-ba13a4b915e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/geneva_records_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/geneva_records_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/geneva_records/index.html.erb" afterPath="$PROJECT_DIR$/app/views/geneva_records/index.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/geneva_records/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -535,12 +532,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496327387291</updated>
-      <workItem from="1496327388863" duration="9556000" />
+      <workItem from="1496327388863" duration="9881000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9556000" />
+    <option name="totallyTimeSpent" value="9881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -651,8 +648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/geneva_records/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
           <folding />
         </state>
       </provider>

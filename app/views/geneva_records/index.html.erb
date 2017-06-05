@@ -2,8 +2,8 @@
 
     <div class="container-fluid record-div">
       <div class="row">
-        <div>
-          <table class="table table-bordered table-striped table-responsive">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
             <thead class="thead-inverse">
               <tr>
                 <th>Tank</th>
@@ -39,13 +39,12 @@
                 <td><%= record.GV_03_close_stock %></td>
                 <td><%= record.GV_03_stock_change %></td>
               </tr>
-
-
             </tbody>
           </table>
         </div>
-        </div>
+      </div>
     </div>
 
     <hr />
 <% end %>
+<%= paginate @genevarecords %>
