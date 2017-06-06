@@ -1,1 +1,53 @@
-<H1>New Records Created Here</H1>
+
+
+<%= simple_form_for @genevarecord do |f| %>
+    <form class="new-record">
+      <div class="container-fluid record-div">
+        <div class="row">
+          <div class="table-responsive">
+            <div class="form-group">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-inverse">
+                <tr>
+                  <th><%= record.created_at.strftime("%B %d %Y") %></th>
+                  <th>Opening Guage</th>
+                  <th>Opening Stock</th>
+                  <th>Closing Guage</th>
+                  <th>Closing Stock</th>
+                  <th>Stock Change</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">GV-01</th>
+                  <td><%= f.input :GV_01_open_gauge %></td>
+                  <td><%= f.input :GV_01_open_stock %></td>
+                  <td><%= f.input :GV_01_close_gauge %></td>
+                  <td><%= f.input :GV_01_close_stock %></td>
+                  <td><%= f.input :GV_01_stock_change %></td>
+                </tr>
+                <tr>
+                  <th scope="row">GV-02</th>
+                  <td><%= f.input :GV_02_open_gauge %></td>
+                  <td><%= f.input :GV_02_open_stock %></td>
+                  <td><%= f.input :GV_02_close_gauge %></td>
+                  <td><%= f.input :GV_02_close_stock %></td>
+                  <td><%= f.input :GV_02_stock_change %></td>
+                </tr>
+                <tr>
+                  <th scope="row">GV-03</th>
+                  <td><%= f.input :GV_03_open_gauge %></td>
+                  <td><%= f.input :GV_03_open_stock %></td>
+                  <td><%= f.input :GV_03_close_gauge %></td>
+                  <td><%= f.input :GV_03_close_stock %></td>
+                  <td><%= f.input :GV_03_stock_change %></td>
+                </tr>
+                </tbody>
+              </table>
+              <%= f.submit 'Create', class: 'btn btn-primary' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+<% end %>
