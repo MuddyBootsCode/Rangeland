@@ -1,11 +1,11 @@
-class GenevarecordsController < ApplicationController
+class GenevaRecordsController < ApplicationController
 
   def index
     @genevarecords = GenevaRecord.all.page(params[:page]).per(5)
   end
 
   def new
-    @genevarecords = GenevaRecord.new
+    @genevarecord = GenevaRecord.new
   end
 
 end

@@ -1,0 +1,2 @@
+module GenevaRecordsHelper
+end

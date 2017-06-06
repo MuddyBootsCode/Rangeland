@@ -1,6 +1,6 @@
 class CreateGenevaRecords < ActiveRecord::Migration[5.0]
   def change
-    create_table :genevarecords do |t|
+    create_table :geneva_records do |t|
 
 
       t.text :GV_01_open_gauge

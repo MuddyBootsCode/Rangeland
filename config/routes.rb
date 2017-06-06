@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'genevarecords#index'
+  root 'geneva_records#index'
 
-  resources :genevarecords
+  resources :geneva_records
 
 end
