@@ -21,24 +21,8 @@
                 <td><%= record.GV_01_open_stock %></td>
                 <td><%= record.GV_01_close_gauge %></td>
                 <td><%= record.GV_01_close_stock %></td>
-                <td><%= record.GV_01_stock_change %></td>
-              </tr>
-              <tr>
-                <th scope="row">GV-02</th>
-                <td><%= record.GV_02_open_gauge %></td>
-                <td><%= record.GV_02_open_stock %></td>
-                <td><%= record.GV_02_close_gauge %></td>
-                <td><%= record.GV_02_close_stock %></td>
-                <td><%= record.GV_02_stock_change %></td>
-              </tr>
-              <tr>
-                <th scope="row">GV-03</th>
-                <td><%= record.GV_03_open_gauge %></td>
-                <td><%= record.GV_03_open_stock %></td>
-                <td><%= record.GV_03_close_gauge %></td>
-                <td><%= record.GV_03_close_stock %></td>
-                <td><%= record.GV_03_stock_change %></td>
-              </tr>
+                <td><%= record.GV_01_close_stock - record.GV_01_open_stock %></td>
+
             </tbody>
           </table>
         </div>

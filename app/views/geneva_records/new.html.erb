@@ -1,7 +1,41 @@
-<H1>Why Won't you work?</H1>
-
-
 <%= simple_form_for @genevarecord do |f| %>
-    <%= f.input :GV_01_open_gauge %>
+<form class="new-geneva">
+<div class="container-fluid record-div">
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-inverse">
+        <tr>
+          <th>Tank</th>
+          <th>Opening Guage</th>
+          <th>Opening Stock</th>
+          <th>Closing Guage</th>
+          <th>Closing Stock</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">GV-01</th>
+          <td>
+              <%= f.input :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
+          </td>
+          <td>
+            <%= f.input :GV_01_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+          </td>
+          <td>
+            <%= f.input :GV_01_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
+          </td>
+          <td>
+            <%= f.input :GV_01_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
+          </td>
+          </tr>
+        </tbody>
+      </form>
+
+      </table>
+    </div>
+  </div>
+</div>
+<%= f.submit 'Create', class: 'btn btn-primary btn-new' %>
 <% end %>
 
