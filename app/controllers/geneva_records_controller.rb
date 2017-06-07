@@ -1,5 +1,7 @@
 class GenevaRecordsController < ApplicationController
 
+
+
   def index
     @genevarecords = GenevaRecord.all.page(params[:page]).per(5)
   end
@@ -11,9 +13,16 @@ class GenevaRecordsController < ApplicationController
   def create
     GenevaRecord.create(record_params)
     redirect_to root_path
+
+  end
+
+  def change
+    @genevarecord.GV_01_stock_change = @genevarecord.GV_01_close_stock - @genevarecord.GV_01_open_stock
   end
 
   private
+
+
 
   def record_params
 
@@ -21,11 +30,8 @@ class GenevaRecordsController < ApplicationController
       :GV_01_open_gauge,
       :GV_01_open_stock,
       :GV_01_close_gauge,
-      :GV_01_close_stock,
-      :GV_01_stock_change
+      :GV_01_close_stock
       )
-
-
   end
    
 end
