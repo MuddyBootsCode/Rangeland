@@ -6,7 +6,7 @@
           <table class="table table-bordered table-striped">
             <thead class="thead-inverse">
               <tr>
-                <th><%= record.created_at.strftime("%B %d %Y") %></th>
+                <th><%= record.created_at.strftime("%B %d, %Y") %></th>
                 <th>Opening Guage</th>
                 <th>Opening Stock</th>
                 <th>Closing Guage</th>
@@ -21,7 +21,7 @@
                 <td><%= record.GV_01_open_stock %></td>
                 <td><%= record.GV_01_close_gauge %></td>
                 <td><%= record.GV_01_close_stock %></td>
-                <td></td>
+                <td><%= record.GV_01_stock_change %></td>
               </tr>
             </tbody>
           </table>

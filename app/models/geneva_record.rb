@@ -1,2 +1,4 @@
 class GenevaRecord < ApplicationRecord
+
+
 end

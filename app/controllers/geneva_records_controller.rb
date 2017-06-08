@@ -17,7 +17,7 @@ class GenevaRecordsController < ApplicationController
   end
 
   def change
-    @genevarecord.GV_01_stock_change = @genevarecord.GV_01_close_stock - @genevarecord.GV_01_open_stock
+    @genevarecord.GV_01_stock_change = self.GV_01_close_stock - self.GV_01_open_stock
   end
 
   private
