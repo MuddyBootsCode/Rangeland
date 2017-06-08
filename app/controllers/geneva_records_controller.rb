@@ -1,7 +1,6 @@
 class GenevaRecordsController < ApplicationController
 
 
-
   def index
     @genevarecords = GenevaRecord.all.page(params[:page]).per(5)
   end
@@ -16,13 +15,8 @@ class GenevaRecordsController < ApplicationController
 
   end
 
-  def change
-    @genevarecord.GV_01_stock_change = self.GV_01_close_stock - self.GV_01_open_stock
-  end
 
   private
-
-
 
   def record_params
 
@@ -33,5 +27,8 @@ class GenevaRecordsController < ApplicationController
       :GV_01_close_stock
       )
   end
-   
+
 end
+
+
+
