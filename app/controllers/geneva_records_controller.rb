@@ -7,6 +7,7 @@ class GenevaRecordsController < ApplicationController
 
   def new
     @genevarecord = GenevaRecord.new
+    3.times {@genevarecord.tanks.build}
   end
 
   def create
