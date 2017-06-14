@@ -16,48 +16,53 @@
         <tbody>
           <tr>
             <th scope="row">GV-01</th>
-          <td>
-            <%= f.text_field :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_01_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.text_field :GV_01_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_01_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
-          </td>
+            <%= f.fields_for :tanks do |tanks_form| %>
+                <td>
+                  <%= hidden_field_tag(:tank_id, 1) %>
+                  <%= f.text_field :open_gauge, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+                </td>
+                <td>
+                  <%= f.number_field :open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+                </td>
+                <td>
+                  <%= f.text_field :close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
+                </td>
+                <td>
+                  <%= f.number_field :close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
+                </td>
+            <% end %>
           </tr>
           <tr>
             <th scope="row">GV-02</th>
-          <td>
-              <%= f.text_field :GV_02_open_gauge, label: false, placeholder: 'GV-02 Open Gauge', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_02_open_stock, label: false, placeholder: 'GV-02 Open Stock', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.text_field :GV_02_close_gauge, label: false, placeholder: 'GV-02 Close Gauge', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_02_close_stock, label: false, placeholder: 'GV-02 Close Stock', input_html: { class: 'form-control'} %>
-          </td>
+              <td>
+                <%= hidden_field_tag(:tank_id, 2) %>
+                  <%= f.text_field :open_gauge, label: false, placeholder: 'GV-02 Open Gauge', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.number_field :open_stock, label: false, placeholder: 'GV-02 Open Stock', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.text_field :close_gauge, label: false, placeholder: 'GV-02 Close Gauge', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.number_field :close_stock, label: false, placeholder: 'GV-02 Close Stock', input_html: { class: 'form-control'} %>
+              </td>
           </tr>
           <tr>
             <th scope="row">GV-03</th>
-          <td>
-              <%= f.text_field :GV_03_open_gauge, label: false, placeholder: 'GV-03 Open Gauge', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_03_open_stock, label: false, placeholder: 'GV-03 Open Stock', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.text_field :GV_03_close_gauge, label: false, placeholder: 'GV-03 Close Gauge', input_html: { class: 'form-control'} %>
-          </td>
-          <td>
-            <%= f.number_field :GV_03_close_stock, label: false, placeholder: 'GV-03 Close Stock', input_html: { class: 'form-control'} %>
-          </td>
+              <td>
+                <%= hidden_field_tag(:tank_id, 3) %>
+                  <%= f.text_field :open_gauge, label: false, placeholder: 'GV-03 Open Gauge', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.number_field :open_stock, label: false, placeholder: 'GV-03 Open Stock', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.text_field :close_gauge, label: false, placeholder: 'GV-03 Close Gauge', input_html: { class: 'form-control'} %>
+              </td>
+              <td>
+                <%= f.number_field :close_stock, label: false, placeholder: 'GV-03 Close Stock', input_html: { class: 'form-control'} %>
+              </td>
           </tr>
         </tbody>
       </table>
