@@ -17,7 +17,7 @@
           <tr>
             <th scope="row">GV-01</th>
                 <td>
-                  <%= f.text_field :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
+                  <%= f.text_field :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control' } %>
                 </td>
                 <td>
                   <%= f.number_field :GV_01_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
@@ -59,9 +59,25 @@
                   <%= f.number_field :GV_03_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
                 </td>
           </tr>
-        
+          <thead class="thead-inverse">
+            <tr>
+              <th>Tacts</th>
+              <th>Open</th>
+              <th>Close</th>
+              <th>Tact Totals</th>
+              <th>Meter Totals</th>
+            </tr>
+          </thead>
+          <tr>
+            <th scope="row">Tact 1</th>
+            <td>
+              <%= f.text_field :tact1_open, label: false, placeholder: 'Tact 1 Open', input_html: { class: 'form-control'} %>
+            </td>
+
         </tbody>
       </table>
+
+      
 
     </div>
   </div>

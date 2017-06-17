@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170613183744) do
+ActiveRecord::Schema.define(version: 20170601150515) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,21 +20,26 @@ ActiveRecord::Schema.define(version: 20170613183744) do
     t.text     "GV_01_close_gauge"
     t.float    "GV_01_open_stock"
     t.float    "GV_01_close_stock"
-    t.float    "GV_01_stock_change"
     t.text     "GV_02_open_gauge"
     t.text     "GV_02_close_gauge"
     t.float    "GV_02_open_stock"
     t.float    "GV_02_close_stock"
-    t.float    "GV_02_stock_change"
     t.text     "GV_03_open_gauge"
     t.text     "GV_03_close_gauge"
     t.float    "GV_03_open_stock"
     t.float    "GV_03_close_stock"
-    t.float    "GV_03_stock_change"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.float    "tact1_open"
+    t.float    "tact1_close"
+    t.float    "tact2_open"
+    t.float    "tact2_close"
+    t.float    "tact3_open"
+    t.float    "tact3_close"
+    t.float    "tact4_open"
+    t.float    "tact4_close"
+    t.float    "tact5_open"
+    t.float    "tact5_close"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
-
-  
 
 end
