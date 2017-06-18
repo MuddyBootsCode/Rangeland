@@ -1,86 +1,182 @@
 <%= simple_form_for @genevarecord do |f| %>
 
-<div class="container-fluid record-div">
-  <div class="row">
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead class="thead-inverse">
-        <tr>
-          <th>Tank</th>
-          <th>Opening Guage</th>
-          <th>Opening Stock</th>
-          <th>Closing Guage</th>
-          <th>Closing Stock</th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">GV-01</th>
-                <td>
-                  <%= f.text_field :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control' } %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_01_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.text_field :GV_01_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_01_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
-                </td>
-          </tr>
-          <tr>
-            <th scope="row">GV-02</th>
-                <td>
-                  <%= f.text_field :GV_02_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_02_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.text_field :GV_02_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_02_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
-                </td>
-          </tr>
-          <tr>
-            <th scope="row">GV-03</th>
-                <td>
-                  <%= f.text_field :GV_03_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_03_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.text_field :GV_03_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
-                </td>
-                <td>
-                  <%= f.number_field :GV_03_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
-                </td>
-          </tr>
-          <thead class="thead-inverse">
-            <tr>
-              <th>Tacts</th>
-              <th>Open</th>
-              <th>Close</th>
-              <th>Tact Totals</th>
-              <th>Meter Totals</th>
-            </tr>
-          </thead>
-          <tr>
-            <th scope="row">Tact 1</th>
-            <td>
-              <%= f.text_field :tact1_open, label: false, placeholder: 'Tact 1 Open', input_html: { class: 'form-control'} %>
-            </td>
-
-        </tbody>
-      </table>
-
-      
-
-    </div>
-  </div>
-</div>
-<%= f.submit 'Create', class: 'btn btn-primary btn-new' %>
+      <div class="container-fluid record-div">
+        <div class="row">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead class="thead-inverse">
+              <tr>
+                <th>Tank</th>
+                <th>Opening Guage</th>
+                <th>Opening Stock</th>
+                <th>Closing Guage</th>
+                <th>Closing Stock</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">GV-01</th>
+                      <td>
+                        <%= f.text_field :GV_01_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_01_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.text_field :GV_01_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_01_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                </tr>
+                <tr>
+                  <th scope="row">GV-02</th>
+                      <td>
+                        <%= f.text_field :GV_02_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_02_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.text_field :GV_02_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_02_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                </tr>
+                <tr>
+                  <th scope="row">GV-03</th>
+                      <td>
+                        <%= f.text_field :GV_03_open_gauge, label: false, placeholder: 'GV-01 Open Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_03_open_stock, label: false, placeholder: 'GV-01 Open Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.text_field :GV_03_close_gauge, label: false, placeholder: 'GV-01 Close Gauge', input_html: { class: 'form-control'} %>
+                      </td>
+                      <td>
+                        <%= f.number_field :GV_03_close_stock, label: false, placeholder: 'GV-01 Close Stock', input_html: { class: 'form-control'} %>
+                      </td>
+                </tr>
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>Tacts</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <th scope="row">Tact 1</th>
+                  <td>
+                    <%= f.number_field :tact1_open, label: false, placeholder: 'Tact 1 Open', input_html: { class: 'form-control'} %>
+                  </td>
+                  <td>
+                    <%= f.number_field :tact1_close, label: false, placeholder: 'Tact 1 Close', input_html: { class: 'form-control'} %>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Tact 2</th>
+                  <td>
+                    <%= f.number_field :tact2_open, label: false, placeholder: 'Tact 2 Open', input_html: { class: 'form-control'} %>
+                  </td>
+                  <td>
+                    <%= f.number_field :tact2_close, label: false, placeholder: 'Tact 2 Close', input_html: { class: 'form-control'} %>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Tact 3</th>
+                  <td>
+                    <%= f.number_field :tact3_open, label: false, placeholder: 'Tact 3 Open', input_html: { class: 'form-control'} %>
+                  </td>
+                  <td>
+                    <%= f.number_field :tact3_close, label: false, placeholder: 'Tact 3 Close', input_html: { class: 'form-control'} %>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Tact 4</th>
+                  <td>
+                    <%= f.number_field :tact4_open, label: false, placeholder: 'Tact 4 Open', input_html: { class: 'form-control'} %>
+                  </td>
+                  <td>
+                    <%= f.number_field :tact4_close, label: false, placeholder: 'Tact 4 Close', input_html: { class: 'form-control'} %>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Tact 5</th>
+                  <td>
+                    <%= f.number_field :tact5_open, label: false, placeholder: 'Tact 5 Open', input_html: { class: 'form-control'} %>
+                  </td>
+                  <td>
+                    <%= f.number_field :tact5_close, label: false, placeholder: 'Tact 5 Close', input_html: { class: 'form-control'} %>
+                  </td>
+                </tr>
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>Stateline (Incoming)</th>         
+                    <th>Open</th>         
+                    <th>Close</th>       
+                  </tr>
+                </thead>
+                  <tr>
+                    <th scope="row">Meter 1 (East)</th>
+                    <td><%= f.number_field :stateline1_open, label: false, placeholder: 'Meter 1 Open', input_html: { class: 'form-control'} %>
+                    </td>
+                    <td><%= f.number_field :stateline1_close, label: false, placeholder: 'Meter 1 Close', input_html: { class: 'form-control'} %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Meter 2 (West)</th>
+                    <td><%= f.number_field :stateline2_open, label: false, placeholder: 'Meter 2 Open', input_html: { class: 'form-control'} %>
+                    </td>
+                    <td><%= f.number_field :stateline2_close, label: false, placeholder: 'Meter 2 Close', input_html: { class: 'form-control'} %>
+                    </td>
+                  </tr>
+                  <thead class="thead-inverse">
+                  <tr>
+                    <th>Plains (Outgoing)</th>         
+                    <th>Open</th>         
+                    <th>Close</tplains
+                  </tr>
+                </thead>
+                  <tr>
+                    <th scope="row">Meter 1 (East)</th>
+                    <td><%= f.number_field :plains1_open, label: false, placeholder: 'Meter 1 Open', input_html: { class: 'form-control'} %>
+                    </td>
+                    <td><%= f.number_field :plains1_close, label: false, placeholder: 'Meter 1 Close', input_html: { class: 'form-control'} %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Meter 2 (West)</th>
+                    <td><%= f.number_field :plains2_open, label: false, placeholder: 'Meter 2 Open', input_html: { class: 'form-control'} %>
+                    </td>
+                    <td><%= f.number_field :plains2_close, label: false, placeholder: 'Meter 2 Close', input_html: { class: 'form-control'} %>
+                    </td>
+                  </tr>
+                  <thead class="thead-inverse">
+                    <tr>
+                      <th>Waffle Iron</th>         
+                      <th>Open</th>         
+                      <th>Close</th>       
+                    </tr>
+                  </thead>
+                  <tr>
+                    <th scope="row">Meter</th>
+                    <td><%= f.number_field :waffleiron_open, label: false, placeholder: 'Open', input_html: { class: 'form-control'} %>
+                    </td>
+                    <td><%= f.number_field :waffleiron_close, label: false, placeholder: 'Close', input_html: { class: 'form-control'} %>
+                    </td>
+                  </tr>
+                  <thead class="thead-inverse">
+                  <tr>
+                    <th>Comments</th>              
+                  </tr>
+                </thead>  
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <%= f.input :comments, label: false, :input_html => {:rows => 10} %>
+    <%= f.submit 'Create', class: 'btn btn-primary btn-new btn-block' %>
 <% end %>

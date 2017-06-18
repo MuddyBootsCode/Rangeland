@@ -38,6 +38,17 @@ ActiveRecord::Schema.define(version: 20170601150515) do
     t.float    "tact4_close"
     t.float    "tact5_open"
     t.float    "tact5_close"
+    t.float    "stateline1_open"
+    t.float    "stateline1_close"
+    t.float    "stateline2_open"
+    t.float    "stateline2_close"
+    t.float    "plains1_open"
+    t.float    "plains1_close"
+    t.float    "plains2_open"
+    t.float    "plains2_close"
+    t.float    "waffleiron_open"
+    t.float    "waffleiron_close"
+    t.text     "comments"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
   end

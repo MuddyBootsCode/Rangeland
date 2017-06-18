@@ -1,9 +1,8 @@
-<div class="container-fluid @genevarecord-div">
+<div class="container-fluid record-div">
       <div class="row">
         <div class="table-responsive">
           <table class="table table-bordered table-striped table-condensed ">
             <thead class="thead-inverse">
-
               <tr>
                 <th><%= @genevarecord.created_at.strftime("%B %d, %Y") %></th>
                 <th>Opening Guage</th>
@@ -38,11 +37,112 @@
                 <td><%= @genevarecord.GV_03_close_stock %></td>
                 <td><%= @genevarecord.GV_03_close_stock - @genevarecord.GV_03_open_stock %></td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+          <thead class="thead-inverse">
+            <tr>
+              <th>Tacts</th>
+              <th>Open</th>
+              <th>Close</th>
+              <th>Totals</th>
+            </tr>
+          </thead>
+          <tr>
+            <th scope="row">Tact 1</th>
+              <td><%= @genevarecord.tact1_open %> </td>
+              <td><%= @genevarecord.tact1_close %></td>
+              <td><%= @genevarecord.tact1_close - @genevarecord.tact1_open %></td>
+          </tr>
+          <tr>
+            <th scope="row">Tact 2</th>
+              <td><%= @genevarecord.tact2_open %> </td>
+              <td><%= @genevarecord.tact2_close %></td>
+              <td><%= @genevarecord.tact2_close - @genevarecord.tact2_open %></td>
+          </tr>
+          <tr>
+            <th scope="row">Tact 3</th>
+              <td><%= @genevarecord.tact3_open %> </td>
+              <td><%= @genevarecord.tact3_close %></td>
+              <td><%= @genevarecord.tact3_close - @genevarecord.tact3_open %></td>       
+          </tr>
+          <tr>
+            <th scope="row">Tact 4</th>
+              <td><%= @genevarecord.tact4_open %> </td>
+              <td><%= @genevarecord.tact4_close %></td>
+              <td><%= @genevarecord.tact4_close - @genevarecord.tact4_open %></td>       
+          </tr>
+          <tr>
+          <tr>
+            <th scope="row">Tact 5</th>
+              <td><%= @genevarecord.tact5_open %> </td>
+              <td><%= @genevarecord.tact5_close %></td>
+              <td><%= @genevarecord.tact5_close - @genevarecord.tact5_open %></td>       
+          </tr>
+          <tr>
+          <thead class="thead-inverse">
+            <tr>
+              <th >Stateline (Incoming)</th>         
+              <th >Open</th>         
+              <th >Close</th>       
+              <th >Totals</th>       
+            </tr>
+          </thead>
+            <tr>
+              <th scope="row">Meter 1 (East)</th>
+              <td><%= @genevarecord.stateline1_open %></td>
+              <td><%= @genevarecord.stateline1_close %></td>
+              <td><%= @genevarecord.stateline1_close - @genevarecord.stateline1_open %></td>
+            </tr>
+            <tr>
+              <th scope="row">Meter 2 (West)</th>
+              <td><%= @genevarecord.stateline2_open %></td>
+              <td><%= @genevarecord.stateline2_close %></td>
+              <td><%= @genevarecord.stateline2_close - @genevarecord.stateline2_open %></td>
+            </tr>
+            <thead class="thead-inverse">
+            <tr>
+              <th>Plains (Outgoing)</th>         
+              <th>Open</th>         
+              <th>Close</th>
+              <th>Totals</th>       
+            </tr>
+          </thead>
+            <tr>
+              <th scope="row">Meter 1 (East)</th>
+              <td><%= @genevarecord.plains1_open %></td>
+              <td><%= @genevarecord.plains1_close %></td>
+              <td><%= @genevarecord.plains1_close - @genevarecord.plains1_open %></td>
+            </tr>
+            <tr>
+              <th scope="row">Meter 2 (West)</th>
+              <td><%= @genevarecord.plains2_open %></td>
+              <td><%= @genevarecord.plains2_close %></td>
+              <td><%= @genevarecord.plains2_close - @genevarecord.plains2_open %></td>
+            </tr>
+            <thead class="thead-inverse">
+            <tr>
+              <th >Waffle Iron</th>         
+              <th >Open</th>         
+              <th >Close</th>
+              <th>Totals</th>       
+            </tr>
+          </thead>
+            <tr>
+              <th scope="row">Meter</th>
+              <td><%= @genevarecord.waffleiron_open %></td>
+              <td><%= @genevarecord.waffleiron_close %></td>
+              <td><%= @genevarecord.waffleiron_close - @genevarecord.waffleiron_open %></td>
+            </tr>
+            <thead class="thead-inverse">
+            <tr>
+              <th >Comments</th>              
+            </tr>
+          </thead>        
+        </tbody>
+      </table>
+      
     </div>
-    <%= link_to 'Edit', edit_geneva_record_path(@genevarecord), class: 'btn btn-primary btn-block' %>
+  </div>      
+</div>
+<%= @genevarecord.comments %></th> 
+<%= link_to 'Edit', edit_geneva_record_path(@genevarecord), class: 'btn btn-primary btn-block' %>
 
-    <hr />
+<hr />
